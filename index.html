@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0d12">
+  <title>7DAY — Reset Your Habits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <div class="logo">7<span>DAY</span></div>
+      <button class="reset-btn" id="resetBtn">Reset</button>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">7 DAY CHALLENGE</p>
+      <h1>RESET<br><span>YOUR HABITS.</span></h1>
+      <p class="subtitle">Satu hari. Satu kemenangan. Fokus hari ini, bukan selamanya.</p>
+
+      <div class="progress-card">
+        <div class="progress-head">
+          <span>PROGRESS</span>
+          <strong id="progressText">0 / 7 hari</strong>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+    </section>
+
+    <section class="streak">
+      <div>
+        <small>STREAK</small>
+        <strong id="streak">0 🔥</strong>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <small>STATUS</small>
+        <strong id="status">Mulai sekarang</strong>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>7 Hari</h2>
+        <span>pilih hari</span>
+      </div>
+      <div class="days" id="days"></div>
+    </section>
+
+    <section class="mission" id="mission">
+      <div class="mission-top">
+        <div>
+          <p class="eyebrow" id="dayLabel">DAY 1</p>
+          <h2 id="missionTitle">Bersihin Pemicu</h2>
+        </div>
+        <div class="day-number" id="dayNumber">01</div>
+      </div>
+      <p id="missionDesc"></p>
+      <ul id="missionList"></ul>
+      <button class="complete-btn" id="completeBtn">SELESAIKAN HARI INI ✓</button>
+    </section>
+
+    <section class="urge">
+      <div class="urge-icon">⚡</div>
+      <div>
+        <h2>Lagi kepancing?</h2>
+        <p>Jangan dilawan dengan panik. Tunda 10 menit dan ubah tempat.</p>
+      </div>
+      <button id="urgeBtn">BANTU AKU</button>
+    </section>
+
+    <section class="journal">
+      <div class="section-title">
+        <h2>Jurnal</h2>
+        <span>tersimpan di HP kamu</span>
+      </div>
+      <textarea id="journalText" placeholder="Apa yang kamu rasakan hari ini? Pemicu terbesar kamu apa?"></textarea>
+      <button class="save-btn" id="saveBtn">Simpan jurnal</button>
+      <p class="saved" id="savedText"></p>
+    </section>
+
+    <footer>
+      <p>Progress disimpan secara lokal di browser. Tidak perlu akun.</p>
+      <p>Kalau terpeleset, jangan menyerah. Mulai lagi dari langkah berikutnya.</p>
+    </footer>
+  </main>
+
+  <div class="modal hidden" id="urgeModal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">PAUSE 10 MENIT</p>
+      <h2>Lewati gelombangnya. 🌊</h2>
+      <div class="timer" id="timer">10:00</div>
+      <ol>
+        <li>Berdiri dan tinggalkan tempat kamu sekarang.</li>
+        <li>Taruh HP jauh dari tangan.</li>
+        <li>Minum air atau cuci muka.</li>
+        <li>Jalan / gerak ringan sampai timer selesai.</li>
+      </ol>
+      <button class="complete-btn" id="startTimer">MULAI TIMER</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
