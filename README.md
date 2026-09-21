@@ -1,16 +1,23 @@
-# 7DAY — Reset Your Habits
+# 7DAY V2 — Reset Your Habits
 
-Website challenge 7 hari untuk membantu membangun kebiasaan yang lebih terkontrol.
+Upgrade dari V1 dengan:
+- Landing page baru
+- Progress ring + bar
+- 7 day challenge cards
+- Achievement/badge system
+- Urge Mode + timer 10 menit
+- Journal lokal
+- Toast feedback
+- Responsive mobile-first
+- Tidak membutuhkan database
 
-## Jalankan
-Cukup buka `index.html` di browser.
+## Timpa V1
+Upload dan replace:
+- `index.html`
+- `style.css`
+- `script.js`
 
-## Upload ke GitHub Pages
-1. Buat repository baru di GitHub.
-2. Upload `index.html`, `style.css`, dan `script.js`.
-3. Masuk **Settings → Pages**.
-4. Pilih **Deploy from a branch**.
-5. Pilih branch `main` dan folder `/root`.
-6. Save.
+`README.md` opsional.
 
-Progress pengguna disimpan dengan `localStorage`, jadi tidak membutuhkan database.
+## GitHub Pages
+Repository → Settings → Pages → Deploy from branch → `main` / `root`.
